@@ -1,0 +1,27 @@
+{
+  "name": "eat-dat-burger",
+  "version": "1.0.0",
+  "description": "Burger logger, folowing the MVC design pattern and utilizing MySQL, Node, Express, Handlebars, technologies as well as and a homemade ORM.",
+  "main": "burger.js",
+  "scripts": {
+    "test": "n/a"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DesmondAldridge/burger.git"
+  },
+  "keywords": [
+    "n/a"
+  ],
+  "author": "Desmond Aldridge",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/DesmondAldridge/burger/issues"
+  },
+  "homepage": "https://github.com/DesmondAldridge/burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "handlebars": "^4.7.6",
+    "mysql": "^2.18.1"
+  }
+}
