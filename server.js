@@ -1,4 +1,4 @@
-//Global Variables
+//Global Variables / Dependencies
 const express = require("express");
 const exphbs = require("express-handlebars");
 const routes = require("./controllers/burger_controller.js");
@@ -18,7 +18,7 @@ app.set("view engine", "handlebars");
 //Routes
 app.use(routes);
 
-//Server
+//Listener
 app.listen(PORT, function() {
     console.log("Server listening on: http://localhost:" + PORT);
 });
