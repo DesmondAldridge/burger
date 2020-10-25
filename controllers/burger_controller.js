@@ -40,4 +40,4 @@ router.put("/api/burgers/:id", function (req, res) {
 });
 
 //Exports
-module.exports = router;
+module.exports = burger_controller;
