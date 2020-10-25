@@ -7,16 +7,16 @@ var connection = mysql.createConnection({
     port: 3306,
     user: "root",
     password: "",
-    database: "burger_db"
-  });
+    database: "burgers_db"
+});
 
-connection.connect(fuction(err)) {
+connection.connect(function(err) {
     if (err) {
         console.error("Error connecting to: " + err.stack);
         return;
     }
 console.log("Connected as ID: " + connection.threadID);
-};
+});
 
 //Exports
 module.exports = connection;
