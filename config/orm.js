@@ -1,8 +1,8 @@
-//Dependency / Import Connection
+//Dependency / Import
 const connection = require("./connection.js");
 
 function printQuestionMarks(num) {
- let arr = [];
+ var arr = [];
     for (let i = 0; i < num; i++) {
         arr.push("?");
     }
@@ -10,7 +10,7 @@ function printQuestionMarks(num) {
 }
 
 function objToSql(ob) {
- let arr = [];
+ var arr = [];
     for (let key in ob) {
      let value = ob[key];
 
@@ -27,10 +27,50 @@ function objToSql(ob) {
 var orm = {
     selectAll: function(tableInput, cb) {
       var queryString = "SELECT * FROM " + tableInput + ";";
-      connection.query(queryString, function(err, result) {
-        if (err) {
-          throw err;
-        }
-        cb(result);
-      });
+        connection.query(queryString, function(err, result) {
+            if (err) {
+            throw err;
+            }
+            cb(result);
+        });
     },
+
+    insertOne: function(table, cols, vals, cb) {
+     var queryString = "INSERT INTO " + table;
+
+     queryString += " (";
+     queryString += cols.toString();
+     queryString += ") ";
+     queryString += "VALUES (";
+     queryString += printQuestionMarks(vals.length);
+     queryString += ") ";
+
+        connection.query(queryString, vals, function(err, result) {
+            if (err) {
+            throw err;
+            }
+
+            cb(result);
+        });
+    },
+
+    updateOne: function(table, objColVals, condition, cb){
+     var queryString = "UPDATE " + table;
+
+     queryString += " SET ";
+     queryString += objToSql(objColVals);
+     queryString += " WHERE ";
+     queryString += condition;
+
+        connection.query(queryString, function(err, result){
+            if (err){
+            throw err;
+            }
+
+            cb(result);
+        });
+    }
+};
+
+//Exports
+module.exports = orm;

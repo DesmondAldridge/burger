@@ -1,4 +1,4 @@
-//Global Variables / Dependencies
+//Dependencies / Imports
 const express = require("express");
 const exphbs = require("express-handlebars");
 const routes = require("./controllers/burger_controller.js");

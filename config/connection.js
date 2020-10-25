@@ -1,5 +1,5 @@
-//Global Variables / Dependencies
-let mysql = require("mysql");
+//Dependency / Import
+const mysql = require("mysql");
 
 //Connection
 var connection = mysql.createConnection({
