@@ -1,13 +1,21 @@
 # Eat Da Burger!
   ![License](https://img.shields.io/badge/LICENSE-none-blue)
 
-![roster](./public/assets/img/burger.gif)
+![burgers](./public/assets/img/burger.gif)
 
-  ## DESCRIPTION
+## DEPLOYMENT (IMPORTANT! PLEASE READ)
+Was unable to deploy properly as no free option was available that did not require an attached bank card, which unfortunately I am not willing to do.
+<br>
+
+![heroku deployment](./public/assets/img/heroku-err-1.png)
+![heroku deployment](./public/assets/img/heroku-err-2.png)
+<br>
+
+## DESCRIPTION
 This project demonstrates the MVC design paradigm in a fun and memorable way.
 
 
-  ## TABLE OF CONTENTS
+## TABLE OF CONTENTS
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
@@ -15,26 +23,26 @@ This project demonstrates the MVC design paradigm in a fun and memorable way.
   - [Test](#test)
   - [Questions](#questions)
 
-  ## INSTALLATION
-  In the terminal type: 'npm install' and press enter. 
-  Then type: 'npm install express-handlebars' and press enter.
+## INSTALLATION
+In the terminal type: 'npm install' and press enter. 
+Then type: 'npm install express-handlebars' and press enter.
 
-  ## USAGE
-  In the terminal type: 'node server.js' and press enter.
+## USAGE
+In the terminal type: 'node server.js' and press enter.
 
-  ## LICENSE
-  none
+## LICENSE
+none
 
-  ## TEST
-  N/A
+# TEST
+N/A
 
-  ## CONTRIBUTION
-  Desmond Aldridge
+## CONTRIBUTION
+Desmond Aldridge
 
-  ## QUESTIONS
-  For further questions please contact me:
-  <br>
-  <br>
-  GitHub: https://github.com/DesmondAldridge
-  <br>
-  Email: desmondaldridge@gmail.com
+## QUESTIONS
+For further questions please contact me:
+<br>
+<br>
+GitHub: https://github.com/DesmondAldridge
+<br>
+Email: desmondaldridge@gmail.com
