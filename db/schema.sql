@@ -1,5 +1,6 @@
 DROP DATABASE IF EXISTS burgers_db;
 CREATE DATABASE burgers_db;
+ALTER USER 'root'@'localhost' IDENTIFIED BY '';
 
 USE burgers_db;
 
@@ -9,3 +10,4 @@ CREATE TABLE burgers (
     devoured BOOLEAN DEFAULT FALSE,
     PRIMARY KEY (id)
 );
+
